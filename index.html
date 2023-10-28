@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+
+    <div id="icons">
+        <div class="icon" ondblclick="info_window()" style="top:20px;">
+            <img src="res/program.ico"><br>
+            info.exe
+        </div>
+        <div class="icon" ondblclick="" style="top:100px;">
+            <img src="res/notepad_doc.ico"><br>
+            info.txt
+        </div>
+    </div>
+
+    <div id="windows">
+
+        <div id="info" class="draggable">
+            <div class="draggableheader">
+                Info
+                <button id="info_x" onclick="close_window(this.id)">X</button>
+            </div>
+            <div class="draggablecontent">
+                Hello world, this is my portfolio
+            </div>
+        </div>
+    </div>
+
+    <script src="js/icons.js"></script>
+    <script src="js/windows.js"></script>
+</body>
+
+</html>
